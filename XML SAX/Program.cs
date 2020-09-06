@@ -56,7 +56,7 @@ namespace XML_SAX
 
             while (xr.Read())
             {
-                // načítáme element
+                // načtení elementu
                 if (xr.NodeType == XmlNodeType.Element)
                 {
                     element = xr.Name; // název aktuálního elementu
@@ -65,7 +65,7 @@ namespace XML_SAX
                         vek = int.Parse(xr.GetAttribute("vek"));
                     }
                 }
-                // načítáme hodnotu elementu
+                // načtení hodnoty elementu
                 else if (xr.NodeType == XmlNodeType.Text)
                 {
                     switch (element)
@@ -78,7 +78,7 @@ namespace XML_SAX
                             break;
                     }
                 }
-                // načítáme ukončující element
+                // načtení ukončujícího helementu
                 else if ((xr.NodeType == XmlNodeType.EndElement) && (xr.Name == "uzivatel"))
                     uzivatele.Add(new Uzivatel(jmeno, vek, registrovan));
             }

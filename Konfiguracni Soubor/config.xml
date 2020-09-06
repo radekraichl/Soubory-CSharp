@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<nastaveni>
+  <datumSpusteni>06.09.2020 22:28:51</datumSpusteni>
+  <spusteniPoStartu>True</spusteniPoStartu>
+  <cesty>
+    <cestaAplikace>C:\Program Files(x86)\ITnetwork</cestaAplikace>
+    <cestaDokumenty>C:\Users\Karel\Documents</cestaDokumenty>
+  </cesty>
+  <zprava>Vítej zpět Radku!</zprava>
+</nastaveni>

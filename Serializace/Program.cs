@@ -9,7 +9,7 @@ namespace Serializace
     {
         static void Main()
         {
-            string path = @"..\..\..\uzivatel.xml";
+            string path = @"..\..\..\uzivatele.xml";
 
             List<Uzivatel> uzivatele = new List<Uzivatel>
             {
