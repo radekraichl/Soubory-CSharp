@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<uzivatele>
+  <uzivatel vek="22">
+    <jmeno>Pavel Slavík</jmeno>
+    <registrovan>21.03.2000</registrovan>
+  </uzivatel>
+  <uzivatel vek="31">
+    <jmeno>Jan Novák</jmeno>
+    <registrovan>30.10.2012</registrovan>
+  </uzivatel>
+  <uzivatel vek="16">
+    <jmeno>Tomáš Marný</jmeno>
+    <registrovan>12.01.2011</registrovan>
+  </uzivatel>
+</uzivatele>

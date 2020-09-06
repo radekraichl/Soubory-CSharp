@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<uzivatele>
+  <uzivatel vek="22">
+    <jmeno>Jan Novák</jmeno>
+    <registrovan>01.01.1980 0:00:00</registrovan>
+  </uzivatel>
+  <uzivatel vek="26">
+    <jmeno>Tomáš Marný</jmeno>
+    <registrovan>05.02.1984 0:00:00</registrovan>
+  </uzivatel>
+  <uzivatel vek="52">
+    <jmeno>Jan Nový</jmeno>
+    <registrovan>08.03.1988 0:00:00</registrovan>
+  </uzivatel>
+</uzivatele>
