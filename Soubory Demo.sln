@@ -25,9 +25,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XML LINQ", "XML LINQ\XML LI
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Serializace", "Serializace\Serializace.csproj", "{D24A8109-9264-4249-AD9D-E820C3605A39}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Konfiguracni Soubor", "Konfiguracni Soubor\Konfiguracni Soubor.csproj", "{C29D53C2-71D9-4B70-BD5F-7169B721006A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Konfiguracni Soubor", "Konfiguracni Soubor\Konfiguracni Soubor.csproj", "{C29D53C2-71D9-4B70-BD5F-7169B721006A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pocitace LINQ", "Pocitace LINQ\Pocitace LINQ.csproj", "{95DC8D0C-21D0-436E-87C4-7EDF8F01DA0A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pocitace LINQ", "Pocitace LINQ\Pocitace LINQ.csproj", "{95DC8D0C-21D0-436E-87C4-7EDF8F01DA0A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Binarni Soubory", "Binarni Soubory\Binarni Soubory.csproj", "{B045796D-CD7C-457C-8890-042F79A0E181}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Slozky Soubory Info", "Slozky Soubory Info\Slozky Soubory Info.csproj", "{FD908BBC-0667-4E37-A1A9-28D475DC68D2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,6 +91,14 @@ Global
 		{95DC8D0C-21D0-436E-87C4-7EDF8F01DA0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{95DC8D0C-21D0-436E-87C4-7EDF8F01DA0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{95DC8D0C-21D0-436E-87C4-7EDF8F01DA0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B045796D-CD7C-457C-8890-042F79A0E181}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B045796D-CD7C-457C-8890-042F79A0E181}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B045796D-CD7C-457C-8890-042F79A0E181}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B045796D-CD7C-457C-8890-042F79A0E181}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD908BBC-0667-4E37-A1A9-28D475DC68D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD908BBC-0667-4E37-A1A9-28D475DC68D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD908BBC-0667-4E37-A1A9-28D475DC68D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD908BBC-0667-4E37-A1A9-28D475DC68D2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

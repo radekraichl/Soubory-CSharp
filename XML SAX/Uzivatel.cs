@@ -4,9 +4,9 @@ namespace XML_SAX
 {
     public class Uzivatel
     {
-        public string Jmeno { get; private set; }
-        public int Vek { get; private set; }
-        public DateTime Registrovan { get; private set; }
+        public string Jmeno { get; }
+        public int Vek { get; }
+        public DateTime Registrovan { get; }
 
         public Uzivatel(string jmeno, int vek, DateTime registrovan)
         {
