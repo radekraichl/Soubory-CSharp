@@ -1,5 +1,4 @@
-﻿using System;
-using System.IO;
+﻿using System.IO;
 using static System.Console;
 
 namespace Slozky_Soubory_Info
@@ -44,7 +43,6 @@ namespace Slozky_Soubory_Info
             WriteLine("\n*** Path ***");
             WriteLine("GetRandomFileName:           {0}", Path.GetRandomFileName());
             WriteLine("GetTempPath:                 {0}", Path.GetTempPath());
-
         }
     }
 }
