@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29728.190
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32414.318
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TextoveSouboryVobornik", "TextoveSouboryVobornik\TextoveSouboryVobornik.csproj", "{C3709A5F-6336-4B31-9AE5-16C92AE3703D}"
 EndProject
@@ -29,9 +29,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Konfiguracni Soubor", "Konf
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pocitace LINQ", "Pocitace LINQ\Pocitace LINQ.csproj", "{95DC8D0C-21D0-436E-87C4-7EDF8F01DA0A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Binarni Soubory", "Binarni Soubory\Binarni Soubory.csproj", "{B045796D-CD7C-457C-8890-042F79A0E181}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Binarni Soubory", "Binarni Soubory\Binarni Soubory.csproj", "{B045796D-CD7C-457C-8890-042F79A0E181}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Slozky Soubory Info", "Slozky Soubory Info\Slozky Soubory Info.csproj", "{FD908BBC-0667-4E37-A1A9-28D475DC68D2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Slozky Soubory Info", "Slozky Soubory Info\Slozky Soubory Info.csproj", "{FD908BBC-0667-4E37-A1A9-28D475DC68D2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
