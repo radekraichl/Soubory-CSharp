@@ -1,31 +1,31 @@
 ﻿using System;
 using System.Xml;
 
-namespace Konfiguracni_Soubor
+namespace Konfiguracni_Soubor_XML;
+
+class Program
 {
-    class Program
+    static void Main()
     {
-        static void Main(string[] args)
+        XmlWriterSettings settings = new()
         {
-            XmlWriterSettings settings = new XmlWriterSettings
-            {
-                Indent = true
-            };
+            Indent = true
+        };
 
-            using XmlWriter xw = XmlWriter.Create(@"..\..\..\config.xml", settings);
+        using XmlWriter xmlWriter = XmlWriter.Create(@"..\..\..\config.xml", settings);
 
-            xw.WriteStartElement("nastaveni");
-            xw.WriteElementString("datumSpusteni", DateTime.Now.ToString());
-            xw.WriteElementString("spusteniPoStartu", true.ToString());
+        xmlWriter.WriteStartElement("Nastaveni");
+        xmlWriter.WriteElementString("DatumSpusteni", DateTime.Now.ToString());
+        xmlWriter.WriteElementString("SpusteniPoStartu", true.ToString());
 
-            xw.WriteStartElement("cesty");
-            xw.WriteElementString("cestaAplikace", @"C:\Program Files(x86)\ITnetwork");
-            xw.WriteElementString("cestaDokumenty", @"C:\Users\Karel\Documents");
-            xw.WriteEndElement(); // uzavření elementu "cesty"
+        xmlWriter.WriteStartElement("Cesty");
+        xmlWriter.WriteElementString("CestaAplikace", @"C:\Program Files(x86)");
+        xmlWriter.WriteElementString("CestaDokumenty", @"C:\Users\Radek\Documents");
+        
+        xmlWriter.WriteEndElement();    // uzavření elementu "Cesty"
 
-            xw.WriteElementString("zprava", "Vítej zpět Radku!");
+        xmlWriter.WriteElementString("Zprava", "Vítej zpět Radku!");
 
-            xw.Flush();
-        }
+        xmlWriter.Flush();
     }
 }
