@@ -3,57 +3,58 @@ using System.Xml.Linq;
 using System.Globalization;
 using System;
 
-namespace Pocitace_LINQ
+namespace Pocitace_LINQ_to_XML;
+
+class Program
 {
-    class Program
+    static void Main()
     {
-        static void Main()
+        // načtení souboru
+        XDocument document = XDocument.Load(@"..\..\..\pocitace.xml");
+
+        // vytvoření kolekce počítačů
+        var pocitaceKolekce = document.Element("pocitace").Elements("pocitac").Select(p => p);
+
+        // požadované informace
+        int celkovaRamSystemu = default;
+        double celkovaFrekvenceSystemu = default;
+        string nejvykonejsiPocitac = default;
+
+        double nejvyssiFrekvencePocitace = default;     // pomocná proměnná
+
+        foreach (var pocitac in pocitaceKolekce)
         {
-            XDocument document = XDocument.Load(@"..\..\..\pocitace.xml");
+            // frekvence procesoru
+            var dotazFrekvence = pocitac.Element("procesor").Element("frekvence").Value;
+            double frekvenceProcesoru = double.Parse(dotazFrekvence.Split(' ')[0], CultureInfo.InvariantCulture);
 
-            var pocitaceKolekce =
-                document.Element("pocitace").Elements("pocitac").Select(p => p);
+            // počet jader procesoru
+            int pocetJader = int.Parse(pocitac.Element("procesor").Element("jader").Value);
 
-            int celkovaRamSystemu = default;
-            double celkovaFrekvenceSystemu = default;
-            string nejvykonejsiPocitac = default;
+            // frekvence grafiky
+            var dotazFrekvenceGrafiky = pocitac.Element("grafika").Element("frekvence").Value;
+            double frekvenceGrafiky = int.Parse(dotazFrekvenceGrafiky.Split(' ')[0]);
 
-            double nejvyssiFrekvencePocitace = default;     // pomocná proměnná
+            // získání a přičteni ram počítače k celkové ram celého systému
+            celkovaRamSystemu += int.Parse(pocitac.Element("ram").Value.Split(' ')[0]);
 
-            foreach (var pocitac in pocitaceKolekce)
+            // přičtení celkové frekvence procesoru k celkové frekvenci systému
+            double celkovaFrekvenceProcesoru = frekvenceProcesoru * pocetJader;
+            celkovaFrekvenceSystemu += celkovaFrekvenceProcesoru;
+
+            // zjištění nejvýkonějšího počítače
+            double celkovaFrekvencePocitace =
+                celkovaFrekvenceProcesoru + frekvenceGrafiky / 1000;    // frekvence grafiky převedena na GHz
+
+            if (celkovaFrekvencePocitace > nejvyssiFrekvencePocitace)
             {
-                // frekvence procesoru
-                var dotazFrekvence = pocitac.Element("procesor").Element("frekvence").Value;
-                double frekvenceProcesoru = double.Parse(dotazFrekvence.Split(' ')[0], CultureInfo.InvariantCulture);
-
-                // počet jader procesoru
-                int pocetJader = int.Parse(pocitac.Element("procesor").Element("jader").Value);
-
-                // frekvence grafiky
-                var dotazFrekvenceGrafiky = pocitac.Element("grafika").Element("frekvence").Value;
-                double frekvenceGrafiky = int.Parse(dotazFrekvenceGrafiky.Split(' ')[0]);
-
-                // získání a přičteni ram počítače k celkové ram celého systému
-                celkovaRamSystemu += int.Parse(pocitac.Element("ram").Value.Split(' ')[0]);
-
-                // přičtení celkové frekvence procesoru k celkové frekvenci systému
-                double celkovaFrekvenceProcesoru = frekvenceProcesoru * pocetJader;
-                celkovaFrekvenceSystemu += celkovaFrekvenceProcesoru;
-
-                // zjištění nejvýkonějšího počítače
-                double celkovaFrekvencePocitace =
-                    celkovaFrekvenceProcesoru + frekvenceGrafiky / 1000;    // frekvence grafiky převedena na GHz
-
-                if (celkovaFrekvencePocitace > nejvyssiFrekvencePocitace)
-                {
-                    nejvyssiFrekvencePocitace = celkovaFrekvencePocitace;
-                    nejvykonejsiPocitac = pocitac.Attribute("nazev").Value;
-                }
+                nejvyssiFrekvencePocitace = celkovaFrekvencePocitace;
+                nejvykonejsiPocitac = pocitac.Attribute("nazev").Value;
             }
-
-            Console.WriteLine("Celokvý součet výkonů všech jader všech počítačů je {0} GHz", celkovaFrekvenceSystemu);
-            Console.WriteLine("Průměrná velikost operační paměti je {0} GB", (double)celkovaRamSystemu / pocitaceKolekce.Count());
-            Console.WriteLine("Nejvýkonější počítač je " + nejvykonejsiPocitac);
         }
+
+        Console.WriteLine("Celokvý součet výkonů všech jader všech počítačů je {0} GHz", celkovaFrekvenceSystemu);
+        Console.WriteLine("Průměrná velikost operační paměti je {0} GB", (double)celkovaRamSystemu / pocitaceKolekce.Count());
+        Console.WriteLine("Nejvýkonější počítač je " + nejvykonejsiPocitac);
     }
 }

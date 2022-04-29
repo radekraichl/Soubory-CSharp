@@ -1,9 +1,9 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net6.0</TargetFramework>
-    <RootNamespace>Cviceni_3_slovicka</RootNamespace>
+    <RootNamespace>Pocitace_LINQ_to_XML</RootNamespace>
   </PropertyGroup>
 
 </Project>

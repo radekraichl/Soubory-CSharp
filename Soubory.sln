@@ -27,7 +27,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Serializace", "Serializace\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Konfiguracni Soubor XML", "Konfiguracni Soubor\Konfiguracni Soubor XML.csproj", "{C29D53C2-71D9-4B70-BD5F-7169B721006A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pocitace LINQ", "Pocitace LINQ\Pocitace LINQ.csproj", "{95DC8D0C-21D0-436E-87C4-7EDF8F01DA0A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pocitace LINQ to XML", "Pocitace LINQ\Pocitace LINQ to XML.csproj", "{95DC8D0C-21D0-436E-87C4-7EDF8F01DA0A}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Binarni Soubory", "Binarni Soubory\Binarni Soubory.csproj", "{B045796D-CD7C-457C-8890-042F79A0E181}"
 EndProject

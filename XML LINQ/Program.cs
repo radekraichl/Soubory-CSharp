@@ -25,13 +25,11 @@ namespace XML_LINQ
             // *******************
             XDocument xmlDocument = new XDocument(
                 new XDeclaration("1.0", "UTF-8", null),
-                new XElement("uzivatele",
-
-                    uzivatele.Select(u =>
-                    new XElement("uzivatel",
-                    new XAttribute("vek", u.Vek),
-                    new XElement("jmeno", u.Jmeno),
-                    new XElement("registrovan", u.Registrovan))
+                new XElement("uzivatele", uzivatele.Select(u =>
+                                            new XElement("uzivatel",
+                                            new XAttribute("vek", u.Vek),
+                                            new XElement("jmeno", u.Jmeno),
+                                            new XElement("registrovan", u.Registrovan))
                 ))
             );
 
