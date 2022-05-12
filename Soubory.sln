@@ -15,8 +15,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Slovnik", "Slovnik\Slovnik.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Svatky", "Svatky\Svatky.csproj", "{2CD592D6-23D4-4424-A561-07D2C01164D9}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TextoveSouboryITNetwork", "TextoveSouboryITNetwork\TextoveSouboryITNetwork.csproj", "{210FE2CE-2F4B-44B0-A303-E409B3697B00}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Znahodnovac", "Znahodnovac\Znahodnovac.csproj", "{8FA692CD-4DE0-46AC-B513-893EAB4D9181}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XML DOM", "XML DOM\XML DOM.csproj", "{BC99DDF5-746E-44FC-AD9A-62CFD85B6717}"
@@ -32,6 +30,8 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Binarni Soubory", "Binarni Soubory\Binarni Soubory.csproj", "{B045796D-CD7C-457C-8890-042F79A0E181}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Slozky Soubory Info", "Slozky Soubory Info\Slozky Soubory Info.csproj", "{FD908BBC-0667-4E37-A1A9-28D475DC68D2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TextoveSoubory", "TextoveSoubory\TextoveSoubory.csproj", "{1D867100-DEB9-4F3B-8BD1-17123137BCE0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,10 +63,6 @@ Global
 		{2CD592D6-23D4-4424-A561-07D2C01164D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2CD592D6-23D4-4424-A561-07D2C01164D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2CD592D6-23D4-4424-A561-07D2C01164D9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{210FE2CE-2F4B-44B0-A303-E409B3697B00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{210FE2CE-2F4B-44B0-A303-E409B3697B00}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{210FE2CE-2F4B-44B0-A303-E409B3697B00}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{210FE2CE-2F4B-44B0-A303-E409B3697B00}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8FA692CD-4DE0-46AC-B513-893EAB4D9181}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8FA692CD-4DE0-46AC-B513-893EAB4D9181}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8FA692CD-4DE0-46AC-B513-893EAB4D9181}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -99,6 +95,10 @@ Global
 		{FD908BBC-0667-4E37-A1A9-28D475DC68D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FD908BBC-0667-4E37-A1A9-28D475DC68D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FD908BBC-0667-4E37-A1A9-28D475DC68D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D867100-DEB9-4F3B-8BD1-17123137BCE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D867100-DEB9-4F3B-8BD1-17123137BCE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D867100-DEB9-4F3B-8BD1-17123137BCE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D867100-DEB9-4F3B-8BD1-17123137BCE0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
