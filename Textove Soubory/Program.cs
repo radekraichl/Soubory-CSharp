@@ -8,7 +8,7 @@ class Program
     static readonly string nazevSouboru = "soubor.txt";
     static readonly string obsahSouboru = "Testovací zápis";
     static readonly string cesta = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "CSharpTest");
-
+    
     static void Main()
     {
 
