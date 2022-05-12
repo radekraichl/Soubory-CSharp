@@ -31,7 +31,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Binarni Soubory", "Binarni 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Slozky Soubory Info", "Slozky Soubory Info\Slozky Soubory Info.csproj", "{FD908BBC-0667-4E37-A1A9-28D475DC68D2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TextoveSoubory", "TextoveSoubory\TextoveSoubory.csproj", "{1D867100-DEB9-4F3B-8BD1-17123137BCE0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Textove Soubory", "TextoveSoubory\Textove Soubory.csproj", "{1D867100-DEB9-4F3B-8BD1-17123137BCE0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
