@@ -1,18 +1,1 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<ArrayOfUzivatel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Uzivatel>
-    <Jmeno>Franta</Jmeno>
-    <Prijmeni>Klika</Prijmeni>
-    <DatumNarozeni>1994-05-12T00:00:00</DatumNarozeni>
-  </Uzivatel>
-  <Uzivatel>
-    <Jmeno>Jan</Jmeno>
-    <Prijmeni>Tleskač</Prijmeni>
-    <DatumNarozeni>1943-03-03T00:00:00</DatumNarozeni>
-  </Uzivatel>
-  <Uzivatel>
-    <Jmeno>Kamil</Jmeno>
-    <Prijmeni>Vidlička</Prijmeni>
-    <DatumNarozeni>2005-06-18T00:00:00</DatumNarozeni>
-  </Uzivatel>
-</ArrayOfUzivatel>
+<?xml version="1.0" encoding="utf-8"?><ArrayOfUzivatel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><Uzivatel><Jmeno>Franta</Jmeno><Prijmeni>Klika</Prijmeni><DatumNarozeni>1994-05-12T00:00:00</DatumNarozeni></Uzivatel><Uzivatel><Jmeno>Jan</Jmeno><Prijmeni>Tleskač</Prijmeni><DatumNarozeni>1943-03-03T00:00:00</DatumNarozeni></Uzivatel><Uzivatel><Jmeno>Kamil</Jmeno><Prijmeni>Vidlička</Prijmeni><DatumNarozeni>2005-06-18T00:00:00</DatumNarozeni></Uzivatel></ArrayOfUzivatel>

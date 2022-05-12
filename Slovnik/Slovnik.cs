@@ -2,14 +2,13 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Text;
 
 namespace Slovnik
 {
     class Slovnik
     {
         private readonly Dictionary<string, string[]> slovaDb;
-        private readonly Random ranadom = new Random();
+        private readonly Random ranadom = new();
 
         public KeyValuePair<string, string[]> NahodneSlovo
         {
@@ -20,8 +19,7 @@ namespace Slovnik
         {
             string[] slova = File.ReadAllLines(@"../../../slova.txt");
 
-            slovaDb =
-                slova.Select(i => i.Split('\t')).ToDictionary(s => s[0], s => s[1].Split(','));
+            slovaDb =  slova.Select(i => i.Split('\t')).ToDictionary(s => s[0], s => s[1].Split(','));
         }
 
         public override string ToString()

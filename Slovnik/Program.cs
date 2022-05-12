@@ -1,46 +1,66 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 
-namespace Slovnik
+namespace Slovnik;
+
+internal class Program
 {
-    class Program
+    private static readonly int pocetOtazek = 5;
+
+    public static void Main()
     {
-        static void Main()
+        Hra hra = new();
+        Slovnik slovnik = new();
+
+        Console.WriteLine("Vítej v testu anglických slovíček");
+        Console.WriteLine("=================================");
+
+        if (hra.Rekord != null)
         {
-            Slovnik slovnik = new Slovnik();
-            Hra hra = new Hra();
+            Console.WriteLine("Nejvyšší rekord drží {0}: {1} bodů", hra.Rekord.Value.jmeno, hra.Rekord.Value.score);
+        }
 
-            Console.WriteLine("Vítej v testu anglických slovíček");
-            Console.WriteLine("=================================");
+        Console.Write("Nový test spustíš libovolnou klávesou...");
+        Console.ReadKey(true);
+        Console.WriteLine('\n');
 
-            if (hra.Rekord != null)
+        for (int i = 0; i < pocetOtazek; i++)
+        {
+            (string enSlovo, string[] czSlova) = slovnik.NahodneSlovo;
+            Console.WriteLine("Co znamená {0}?", enSlovo);
+
+            string odpoved = Console.ReadLine().Trim();
+
+            if (czSlova.Contains(odpoved.ToLower()))
             {
-                Console.WriteLine("Nejvyšší rekord drží {0}: {1} bodů", hra.Rekord.Value.jmeno, hra.Rekord.Value.skore);
+                Console.WriteLine("Výborně! Pojďme dál.");
+                hra.Score++;
             }
-
-            Console.Write("Nový test spustíš libovolnou klávesou...");
-            Console.ReadKey();
-            Console.WriteLine();
-
-            for (int i = 0; i < 5; i++)
+            else
             {
-                (string enSlovo, string[] czSlova) = slovnik.NahodneSlovo;
-                Console.WriteLine("Co znamená {0}?", enSlovo);
+                Console.WriteLine($"Správný překlad je {string.Join(',', czSlova)}. ");
 
-                string odpoved = Console.ReadLine().Trim();
-
-                if (czSlova.Contains(odpoved.ToLower()))
+                if (i < pocetOtazek - 1)
                 {
-                    Console.WriteLine("Výborně! Pojďme dál.");
-                    hra.Body++;
-                }
-                else
-                {
-                    Console.Write($"Správný překlad je {string.Join(',', czSlova)}. ");
                     Console.WriteLine("Nevadí, zkusme to ještě jednou.");
                 }
             }
+
+            Console.WriteLine();
+        }
+
+        Console.WriteLine("KONEC HRY");
+        Console.WriteLine($"Počet bodů: {hra.Score}");
+
+        int rekordScore = hra.Rekord == null ? 0 : int.Parse(hra.Rekord.Value.score);
+
+        if (hra.Score > rekordScore)
+        {
+            Console.Write("Nový rekord! Napiš své jméno: ");
+
+            string jmeno = Console.ReadLine().Trim();
+
+            hra.UlozRekord(jmeno, hra.Score);
         }
     }
 }
