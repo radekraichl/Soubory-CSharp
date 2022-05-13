@@ -8,7 +8,7 @@ class Program
     static readonly string nazevSouboru = "soubor.txt";
     static readonly string obsahSouboru = "Testovací zápis";
     static readonly string cesta = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "CSharpTest");
-    
+
     static void Main()
     {
 
@@ -53,7 +53,7 @@ class Program
         // vypis obsahu souboru
         Console.WriteLine("Vypisuji soubor:");
 
-        using StreamReader sr = new(Path.Combine(cesta, "soubor.txt"));
+        using StreamReader sr = new(Path.Combine(cesta, nazevSouboru));
         string s;
         while ((s = sr.ReadLine()) != null)
         {
@@ -63,7 +63,7 @@ class Program
         // vypis obsahu souboru pomoci tridy File
         Console.WriteLine("\nVypisuji soubor pomocí statické třídy File:");
 
-        string[] radky = File.ReadAllLines(Path.Combine(cesta, "soubor.txt"));
+        string[] radky = File.ReadAllLines(Path.Combine(cesta, nazevSouboru));
         foreach (string radka in radky)
         {
             Console.WriteLine(radka);
