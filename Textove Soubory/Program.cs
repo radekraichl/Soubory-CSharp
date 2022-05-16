@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 
-namespace TextoveSouboryITNetwork;
+namespace TextoveSoubory;
 
 class Program
 {
