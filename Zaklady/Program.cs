@@ -1,51 +1,48 @@
 ﻿using System;
 using System.IO;
 
-namespace Zaklady
-{
-    class Program
-    {
-        static void Main()
-        {
-            string cesta = "";
+namespace Zaklady;
 
+class Program
+{
+    static void Main()
+    {
+        string cesta = string.Empty;
+
+        try
+        {
+            cesta = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "Data");
+
+            if (!Directory.Exists(cesta))
+            {
+                Directory.CreateDirectory(cesta);
+            }
+        }
+        catch
+        {
+            Console.WriteLine("Nepodařilo se vytvořit složku {0}, zkontrolujte prosím svá oprávnění.", cesta);
+        }
+
+        if (File.Exists(Path.Combine(cesta, "databaze.dat")))
+        {
             try
             {
-                cesta = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "ITnetwork");
-
-                Console.WriteLine(cesta);
-
-                if (!Directory.Exists(cesta))
-                {
-                    Directory.CreateDirectory(cesta);
-                }
+                // Zde umístěte kód pro načtení vašeho souboru
             }
-            catch
+            catch (Exception e)
             {
-                Console.WriteLine("Nepodařilo se vytvořit složku {0}, zkontrolujte prosím svá oprávnění.", cesta);
+                Console.WriteLine("Při načítání souboru došlo k následující chybě: {0}", e.Message);
             }
-
-            if (File.Exists(Path.Combine(cesta, "databaze.dat")))
+        }
+        else
+        {
+            try
             {
-                try
-                {
-                    // Zde umístěte kód pro načtení vašeho nastavení ze souboru
-                }
-                catch (Exception e)
-                {
-                    Console.WriteLine("Při načítání nastavení došlo k následující chybě: {0}", e.Message);
-                }
+                // Zde umístěte kód pro vytvoření vašeho souboru
             }
-            else
+            catch (Exception e)
             {
-                try
-                {
-                    // Zde umístěte kód pro vytvoření vašeho nastavení
-                }
-                catch (Exception e)
-                {
-                    Console.WriteLine("Při vytvoření nastavení došlo k následující chybě: {0}", e.Message);
-                }
+                Console.WriteLine("Při vytváření souboru došlo k následující chybě: {0}", e.Message);
             }
         }
     }
