@@ -1,22 +1,21 @@
 ﻿using System;
 
-namespace TextoveSouboryVobornik
+namespace Textove_Soubory_Vobornik;
+
+class Program
 {
-    class Program
+    static void Main()
     {
-        static void Main()
+        try
         {
-            try
-            {
-                //Soubor.PrectiCelySoubor(@"..\..\..\Soubor.cs");
-                //Soubor.PrectiCelySouborPoRadcich2(@"..\..\..\Soubor.cs");
-                //Soubor.ZapisujDoSouboru(@"..\..\..\temp\Slova.txt");
-                Soubor.ZapisujCislaDoSouboru(@"..\..\..\temp\Cisla.txt");
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e.Message);
-            }
+            //Soubor.PrectiCelySoubor(@"..\..\..\Soubor.cs");
+            //Soubor.PrectiCelySouborPoRadcich2(@"..\..\..\Soubor.cs");
+            //Soubor.ZapisujDoSouboru(@"..\..\..\temp\Slova.txt");
+            Soubor.ZapisujCislaDoSouboru(@"..\..\..\temp\Cisla.txt");
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e.Message);
         }
     }
 }

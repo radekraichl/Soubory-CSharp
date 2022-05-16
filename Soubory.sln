@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32414.318
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TextoveSouboryVobornik", "TextoveSouboryVobornik\TextoveSouboryVobornik.csproj", "{C3709A5F-6336-4B31-9AE5-16C92AE3703D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Textove Soubory Vobornik", "TextoveSouboryVobornik\Textove Soubory Vobornik.csproj", "{C3709A5F-6336-4B31-9AE5-16C92AE3703D}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XML SAX", "XML SAX\XML SAX.csproj", "{17A2A52B-4CBC-49A6-9C09-5720C62307DD}"
 EndProject
