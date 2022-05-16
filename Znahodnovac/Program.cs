@@ -2,35 +2,34 @@
 using System.IO;
 using System.Linq;
 
-namespace Znahodnovac
+namespace Znahodnovac;
+
+class Program
 {
-    class Program
+    static readonly Random random = new();
+    static void Main()
     {
-        static Random random = new Random();
-        static void Main()
+        string[] vstup;
+        string vstupniSouborCesta = @"..\..\..\vstup.txt";
+
+        if (File.Exists(vstupniSouborCesta))
         {
-            string[] vstup;
-            string vstupniSouborCesta = @"..\..\..\vstup.txt";
+            vstup = File.ReadAllLines(vstupniSouborCesta);
 
-            if (File.Exists(vstupniSouborCesta))
+            try
             {
-                vstup = File.ReadAllLines(vstupniSouborCesta);
-
-                try
-                {
-                    File.WriteAllLines(@"..\..\..\vystup.txt", vstup.OrderBy(x => random.Next()).ToArray());
-                    Console.WriteLine("OK");
-                }
-                catch (Exception e)
-                {
-                    Console.WriteLine("Chyba zápisu do souboru");
-                    Console.WriteLine(e.Message);
-                }
+                File.WriteAllLines(@"..\..\..\vystup.txt", vstup.OrderBy(x => random.Next()).ToArray());
+                Console.WriteLine("OK");
             }
-            else
+            catch (Exception e)
             {
-                Console.WriteLine("Vstupní soubor neexistuje");
+                Console.WriteLine("Chyba zápisu do souboru");
+                Console.WriteLine(e.Message);
             }
+        }
+        else
+        {
+            Console.WriteLine("Vstupní soubor neexistuje");
         }
     }
 }
