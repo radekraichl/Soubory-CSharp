@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32414.318
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Textove Soubory Vobornik", "TextoveSouboryVobornik\Textove Soubory Vobornik.csproj", "{C3709A5F-6336-4B31-9AE5-16C92AE3703D}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XML SAX", "XML SAX\XML SAX.csproj", "{17A2A52B-4CBC-49A6-9C09-5720C62307DD}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zaklady", "Zaklady\Zaklady.csproj", "{F43CDA96-DD7F-4888-BDF5-20CEAE172547}"
@@ -33,16 +31,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Slozky Soubory Info", "Sloz
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Textove Soubory", "Textove Soubory\Textove Soubory.csproj", "{CCE2E43B-4F1A-47F9-A049-0D737F05A7AD}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Textove Soubory Vobornik", "Textove Soubory Vobornik\Textove Soubory Vobornik.csproj", "{4079C99E-F77A-47B8-B8BC-5219B0C65885}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C3709A5F-6336-4B31-9AE5-16C92AE3703D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C3709A5F-6336-4B31-9AE5-16C92AE3703D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C3709A5F-6336-4B31-9AE5-16C92AE3703D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C3709A5F-6336-4B31-9AE5-16C92AE3703D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{17A2A52B-4CBC-49A6-9C09-5720C62307DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{17A2A52B-4CBC-49A6-9C09-5720C62307DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{17A2A52B-4CBC-49A6-9C09-5720C62307DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -99,6 +95,10 @@ Global
 		{CCE2E43B-4F1A-47F9-A049-0D737F05A7AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CCE2E43B-4F1A-47F9-A049-0D737F05A7AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CCE2E43B-4F1A-47F9-A049-0D737F05A7AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4079C99E-F77A-47B8-B8BC-5219B0C65885}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4079C99E-F77A-47B8-B8BC-5219B0C65885}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4079C99E-F77A-47B8-B8BC-5219B0C65885}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4079C99E-F77A-47B8-B8BC-5219B0C65885}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
